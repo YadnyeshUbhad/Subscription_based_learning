@@ -1,0 +1,157 @@
+<!-- Advanced Home Page with Eight Features and Enhanced Interactivity -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="C:\Users\chede appliances\OneDrive\Desktop\subcription based\assest\css\styles.css">
+    <title>MyPlatform - Home</title>
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="header">
+        <div class="logo"><a href="#">MyPlatform</a></div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="plans.html">Plans & Pricing</a></li>
+                <li><a href="teach.html">Teach on MyPlatform</a></li>
+                <li><a href="#">Subscription</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <div class="search-bar">
+                <input type="text" placeholder="Search for courses...">
+                <button><img src="search-icon.png" alt="Search"></button>
+            </div>
+            <div class="cart-icon">
+                <img src="cart-icon.png" alt="Cart">
+                <span class="cart-count">0</span>
+            </div>
+            <div class="auth-buttons">
+                <a href="signin.html">Sign In</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to MyPlatform</h1>
+            <p>Explore top courses and achieve your learning goals.</p>
+            <div class="hero-buttons">
+                <a href="courses.html" class="btn">Browse Courses</a>
+                <a href="#" class="btn">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container">
+            <h2>Why Choose Us</h2>
+            <div class="feature-cards">
+                <div class="feature-card">
+                    <img src="feature1.png" alt="Feature 1">
+                    <h3>Wide Range of Courses</h3>
+                    <p>Access a variety of courses in different fields.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="feature2.png" alt="Feature 2">
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from industry experts and professionals.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="feature3.png" alt="Feature 3">
+                    <h3>Affordable Plans</h3>
+                    <p>Choose a plan that fits your budget.</p>
+                </div>
+                <div class="feature-card">
+                    <img src="feature4.png" alt="Feature 4">
+                    <h3>Interactive Learning</h3>
+                    <p>Engage with quizzes, assignments, and projects.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Users Say</h2>
+            <div class="testimonial-cards">
+                <div class="testimonial-card">
+                    <p>"This platform has transformed my learning experience! Highly recommended."</p>
+                    <h4>- Jane Doe</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"The courses are well-structured and easy to follow. Excellent support too!"</p>
+                    <h4>- John Smith</h4>
+                </div>
+                <div class="testimonial-card">
+                    <p>"I achieved my goals thanks to MyPlatform. It's a game-changer."</p>
+                    <h4>- Emily Davis</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to our newsletter to get the latest updates and offers.</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-columns">
+            <div>
+                <h4>About Us</h4>
+                <ul>
+                    <li><a href="#">Our Story</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                </ul>
+            </div>
+        </div>
+        <p>&copy; 2025 MyPlatform. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cartIcon = document.querySelector('.cart-icon');
+            const cartCount = document.querySelector('.cart-count');
+            let count = 0;
+
+            document.querySelectorAll('.btn').forEach(button => {
+                button.addEventListener('click', () => {
+                    count++;
+                    cartCount.textContent = count;
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teach on LearningHub</title>
+    <link rel="stylesheet" href="teach.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Teach on LearningHub</h1>
+    </header>
+    
+    <section class="intro">
+        <h2>Share Your Knowledge with the World</h2>
+        <p>Join our platform and start creating courses to inspire learners worldwide.</p>
+        <button class="apply-btn">Start Teaching</button>
+    </section>
+    
+    <section class="why-teach">
+        <h2>Why Teach on LearningHub?</h2>
+        <ul>
+            <li>Reach thousands of students globally</li>
+            <li>Earn money from your knowledge</li>
+            <li>Flexible schedule – teach at your own pace</li>
+            <li>Access powerful course creation tools</li>
+            <li>Dedicated support for instructors</li>
+        </ul>
+    </section>
+    
+    <section class="teacher-registration">
+        <h2>Register as a Teacher</h2>
+        <form id="teacher-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="expertise">Expertise:</label>
+            <input type="text" id="expertise" name="expertise" required>
+            
+            <button type="submit">Register</button>
+        </form>
+    </section>
+    
+    <section class="course-upload">
+        <h2>Upload Your Course</h2>
+        <form id="course-form">
+            <label for="course-title">Course Title:</label>
+            <input type="text" id="course-title" name="course-title" required>
+            
+            <label for="course-desc">Course Description:</label>
+            <textarea id="course-desc" name="course-desc" required></textarea>
+            
+            <label for="course-price">Price ($):</label>
+            <input type="number" id="course-price" name="course-price" required>
+            
+            <button type="submit">Upload Course</button>
+        </form>
+    </section>
+    
+    <section class="teacher-support">
+        <h2>Instructor Support & Community</h2>
+        <p>Join our instructor community and get support from other educators.</p>
+        <button class="community-btn">Join Instructor Community</button>
+    </section>
+    
+    <script src="teach.js"></script>
+</body>
+</html>

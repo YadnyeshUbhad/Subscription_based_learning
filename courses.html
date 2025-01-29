@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - LearningHub</title>
+    <link rel="stylesheet" href="courses.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html">LearningHub</a>
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-actions">
+            <div class="search-bar">
+                <input type="text" placeholder="Search courses...">
+                <button>🔍</button>
+            </div>
+            <div class="cart-icon">
+                🛒<span class="cart-count">0</span>
+            </div>
+            <div class="auth-buttons">
+                <a href="signin.html">Sign In</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="courses">
+        <section class="courses-header">
+            <h1>Explore Our Courses</h1>
+            <p>Choose from a variety of courses to upskill and grow your career.</p>
+        </section>
+
+        <section class="courses-list">
+            <div class="course-card">
+                <img src="course1.jpg" alt="Course 1">
+                <h3>Web Development Bootcamp</h3>
+                <p>Instructor: John Doe</p>
+                <p>Price: $99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="course-card">
+                <img src="course2.jpg" alt="Course 2">
+                <h3>Data Science Masterclass</h3>
+                <p>Instructor: Jane Smith</p>
+                <p>Price: $149</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="course-card">
+                <img src="course3.jpg" alt="Course 3">
+                <h3>Graphic Design Essentials</h3>
+                <p>Instructor: Alex Brown</p>
+                <p>Price: $79</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Add more course cards as needed -->
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 LearningHub. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const cartCount = document.querySelector('.cart-count');
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                let count = parseInt(cartCount.textContent);
+                cartCount.textContent = count + 1;
+            });
+        });
+    </script>
+</body>
+</html>
